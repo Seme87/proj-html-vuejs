@@ -46,7 +46,7 @@ header{
   background-color: antiquewhite;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 0;
+  padding: 25px 0;
   
 }
 .logo img{
@@ -73,13 +73,16 @@ header{
 .header-bottom{
   color: white;
   background-color: navy;
-  padding: 400px 0;
+  padding: 200px 0;
   h1{
-    font-size: 100px;
+    font-size: 50px;
     font-weight: 400;
     span{
       color:var(--primary-color);
     }
+  }
+  p{
+    font-size: 25px;
   }
 }
 </style>
