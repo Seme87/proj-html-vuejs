@@ -1,12 +1,28 @@
 <script>
+import SectionWelcome from './SectionWelcome.vue';
+import SectionMeet from './SectionMeet.vue';
+
+
+
 export default {
   name: 'AppMain',
+  components:{
+    SectionWelcome,
+    SectionMeet,
+  }
 }
 </script>
 
 <template>
-  <h1 class="container">Main</h1>
+
+  <SectionWelcome/>
+  <SectionMeet/>
+
+
+
+
 </template>
 
-<style>
+<style lang="scss" scoped>
+
 </style>

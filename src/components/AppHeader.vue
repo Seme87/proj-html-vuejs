@@ -27,7 +27,7 @@ export default {
         <div class="title">
           <h1>Caring <span>For life</span></h1>
         </div>
-        <p>Kind Words can be short and easy to speak,but their echoes are truly endless.Avada Health focuses on you as if it was our own family</p>
+        <p>Kind Words can be short and easy to speak, but their echoes are truly endless.Avada Health focuses on you as if it was our own family</p>
         <button class="btn">LEARN MORE</button>
 
       </div>
@@ -43,7 +43,6 @@ header{
   background-size: cover;
 }
 .header-top{
-  background-color: antiquewhite;
   justify-content: space-between;
   align-items: center;
   padding: 25px 0;
@@ -72,17 +71,26 @@ header{
 
 .header-bottom{
   color: white;
-  background-color: navy;
+  
   padding: 200px 0;
   h1{
-    font-size: 50px;
-    font-weight: 400;
+    font-size: 80px;
+    font-weight: 300;
     span{
       color:var(--primary-color);
     }
   }
   p{
+    display: inline-block;
     font-size: 25px;
+    padding-bottom: 50px ;
+    padding-top: 30px;
+  }
+
+  .btn{
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
   }
 }
 </style>
