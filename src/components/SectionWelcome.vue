@@ -96,7 +96,7 @@
     padding: 15px 0;
   }
   p{
-    color: #bcbcbd;
+    color: #858f97;
     font-size:13px ;
     padding: 10px 0;
   }
