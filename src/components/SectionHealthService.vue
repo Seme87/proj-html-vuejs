@@ -88,7 +88,7 @@
 <style lang="scss" scoped>
  .health{
     padding-top: 115px;
-    padding-bottom: 135px;
+    
  }
 .s-meet-top{
     color: #333c4e;

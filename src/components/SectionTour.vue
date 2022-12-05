@@ -69,7 +69,7 @@
     div{
         height: 2px;
         width: 230px;
-        background-color: lightgray;
+        background-color: #ffff;
     }
 }
 
