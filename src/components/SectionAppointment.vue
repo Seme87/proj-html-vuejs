@@ -19,11 +19,11 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
 
             <form action="" class="d-flex container-xs ">
-                <input class="col" type="text" nome="nome" placeholder="Name">
-                <input class="col" type="email" nome="nome" placeholder="Email">
-                <input class="col" type="number" placeholder="Phone Number">
-                <input class="col" type="date" placeholder="Appointment Date">
-                <textarea placeholder="How we can we Help" ></textarea>
+                <input class="col" type="text" nome="nome" placeholder="Name" required>
+                <input class="col" type="email" nome="nome" placeholder="Email" required>
+                <input class="col" type="number" placeholder="Phone Number" required>
+                <input class="col" type="date" placeholder="Appointment Date" required>
+                <textarea style="height:100px ;" placeholder="How we can we Help" ></textarea>
                 <button class="btn" type="submit">MAKE AN APPOINTMENT</button>
             </form>
             
@@ -90,6 +90,7 @@ form{
     border: 1px solid #ffff;
 }
 textarea{
+    margin: 0 10px;
     padding: 10px 20px;
     width: 100%;
     background-color: inherit;
@@ -98,6 +99,7 @@ textarea{
 }
 
 .btn{
+    margin: 0 10px;
     margin-top: 10px;
     width: 100%;
     background-color:#3aafbf ;
