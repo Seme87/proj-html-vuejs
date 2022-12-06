@@ -1,11 +1,39 @@
 <script>
 export default {
   name: 'AppFooter',
+  data(){
+    return {
+      info: [
+        {
+          href:"#",
+          field:"Cardiology",
+        },
+        {
+          href:"#",
+          field:"Pediatrics",
+        },
+        {
+          href:"#",
+          field:"Diabetes Care",
+        },
+        {
+          href:"#",
+          field:"Pre-natal Care",
+        },
+        {
+          href:"#",
+          field:"Ultrasound Echocardiogram",
+        },
+       
+      ]
+    }
+  }
 }
 </script>
 
 <template>
   <footer >
+
     <div class="container d-flex">
 
       <div class="col">
@@ -52,27 +80,16 @@ export default {
       <div class="col">
 
         <div class="info">
-          <h3>CONTACT INFORMATION</h3>
+          <h3>MEDICAL DEPARTMENTS</h3>
           <div class="decoration"></div>
         </div>
 
         <nav class="footer-nav">
           <ul>
-            <li>
-              <a href="#"><i class="fa-solid fa-circle-chevron-right"></i>Cardiology</a>
+            <li v-for="item in info">
+              <a :href="info.href"><i class="fa-solid fa-circle-chevron-right"></i>{{ item.field }}</a>
             </li>
-            <li>
-              <a href="#"><i class="fa-solid fa-circle-chevron-right"></i>Pediatrics</a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-solid fa-circle-chevron-right"></i>Diabetes Care</a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-solid fa-circle-chevron-right"></i>Pre natel Care</a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-solid fa-circle-chevron-right"></i>Ultra sound Echocardiogram</a>
-            </li>
+            
           </ul>
         </nav>
 
@@ -92,8 +109,10 @@ export default {
             </div>
           </div>
         </div>
-      </div>
+    </div>
+
   </footer>
+
 </template>
 
 <style lang="scss" scoped>
