@@ -27,8 +27,8 @@ export default {
           active: false,
         },
 
-      ]
-    }
+      ],
+    };
   },
   methods: {
     changeLink(index) {
@@ -57,7 +57,7 @@ export default {
         <nav class="main-nav">
           <ul class="d-flex align-items-center">
             <li v-for="(item, index) in links">
-              <a :href="item.href" @click.prevent="changeLink(index)" :class="{ active: item.active }" >{{item.label}}</a>
+              <a :href="item.href" @click.prevent="changeLink(index)"  :class="{ active: item.active }" >{{item.label}}</a>
             </li>
             
             <li><button class="btn">MAKE APPOINTMENT</button></li>
@@ -103,12 +103,14 @@ header{
   li{
     padding: 0 10px;
     list-style: none;
-    a{
-      text-decoration: none;
-      color: white;
-    }
+    
   }
 }
+
+a{
+   text-decoration: none;
+    color: white;
+  }
 
 .active{
   color:var(--primary-color);
