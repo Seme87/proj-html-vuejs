@@ -101,7 +101,7 @@ export default {
 
     </div>
     <div class="footer-bottom">
-        <div class="container d-flex ">
+        <div class="content container d-flex ">
           <div class="copyrights ">
             <p>&#169; Copyrights | Avada by Team by team fusion | All rights reserved | Powered by Wordpress</p>
             <div class="chevron">
@@ -207,13 +207,19 @@ ul{
 }
 
 .footer-bottom{
-  padding:25px 0;
+  // padding:25px 0;
   background-color: #f7f7f7;
   position: relative;
 }
 
-.copyrights{
-  height: 100%;
+
+
+.content{
+  position: relative;
+}
+
+.copyrights {
+  padding: 25px 0;
 }
 
 
@@ -221,7 +227,6 @@ ul{
   position: absolute;
   right: 0;
   bottom:0;
-  
   height: 35px;
   width: 45px;
   color: #ffff;
@@ -229,7 +234,6 @@ ul{
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 </style>

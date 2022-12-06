@@ -23,7 +23,7 @@
                 <input class="col" type="email" nome="nome" placeholder="Email" required>
                 <input class="col" type="number" placeholder="Phone Number" required>
                 <input class="col" type="date" placeholder="Appointment Date" required>
-                <textarea style="height:100px ;" placeholder="How we can we Help" ></textarea>
+                <textarea style="height:100px ;" placeholder="How we can we Help" required ></textarea>
                 <button class="btn" type="submit">MAKE AN APPOINTMENT</button>
             </form>
             
