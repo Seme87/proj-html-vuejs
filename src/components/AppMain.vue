@@ -5,7 +5,7 @@ import SectionHealthService from './SectionHealthService.vue';
 import SectionTour from './SectionTour.vue';
 import SectionService from './SectionService.vue';
 import SectionAppointment from './SectionAppointment.vue';
-
+import SectionSlider from './SectionSlider.vue';
 
 
 
@@ -22,6 +22,7 @@ export default {
     SectionTour,
     SectionService,
     SectionAppointment,
+    SectionSlider,
 }
 }
 </script>
@@ -34,6 +35,8 @@ export default {
   <SectionTour/>
   <SectionService/>
   <SectionAppointment/>
+  <SectionSlider/>
+
 
 
 
