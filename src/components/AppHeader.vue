@@ -69,6 +69,10 @@ header{
   }
 }
 
+ul li:hover a{
+  color:var(--primary-color);
+}
+
 .header-bottom{
   color: white;
   
