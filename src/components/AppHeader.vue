@@ -3,8 +3,49 @@
 
 export default {
   name: 'AppHeader',
+  data(){
+    return {
+      links: [
+        {
+          href:"#",
+          label:"HOME",
+          active: false,
+        },
+        {
+          href:"#",
+          label:"ABOUT",
+          active: true,
+        },
+        {
+          href:"#",
+          label:"DEPARTMENTS",
+          active: false,
+        },
+        {
+          href:"#",
+          label:"ARTICLES",
+          active: false,
+        },
+
+      ]
+    }
+  },
+  methods: {
+    changeLink(index) {
+      
+      this.links.forEach((elm, i) => {
+        console.log(i)
+        if(i === index) {
+          elm.active = true;
+          console.log(elm.active)
+        }else {
+          elm.active = false;
+        }
+      });
+    },
+  },
   
-}
+};
 </script>
 
 <template>
@@ -15,10 +56,10 @@ export default {
         </div>
         <nav class="main-nav">
           <ul class="d-flex align-items-center">
-            <li><a href="">HOME</a></li>
-            <li><a href="">ABOUT</a></li>
-            <li><a href="">DEPARTMENTS</a></li>
-            <li><a href="">ARTICLES</a></li>
+            <li v-for="(item, index) in links">
+              <a :href="item.href" @click.prevent="changeLink(index)" :class="{ active: item.active }" >{{item.label}}</a>
+            </li>
+            
             <li><button class="btn">MAKE APPOINTMENT</button></li>
           </ul>
         </nav>
@@ -69,7 +110,7 @@ header{
   }
 }
 
-ul li:hover a{
+.active{
   color:var(--primary-color);
 }
 
