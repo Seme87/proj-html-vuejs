@@ -32,10 +32,13 @@ export default {
 </script>
 
 <template>
+
   <footer >
 
+    <!-- FOOTER TOP -->
     <div class="container d-flex">
 
+      <!-- PRIMA COLONNA -->
       <div class="col">
 
         <div class="logo">
@@ -59,9 +62,10 @@ export default {
         </div>
   
       </div>
+      <!-- PRIMA COLONNA -->
 
 
-
+      <!-- SECONDA COLONNA -->
       <div class="col">
         <div class="info">
           <h3>CONTACT INFORMATION</h3>
@@ -73,10 +77,11 @@ export default {
             <i class="fa-solid fa-phone"></i><span>1-000089997</span>
           </div>
         </div>
-
       </div>
+      <!-- SECONDA COLONNA -->
 
 
+      <!-- TERZA COLONNA -->
       <div class="col">
 
         <div class="info">
@@ -96,10 +101,15 @@ export default {
         <button class="btn">VIEW OUR DEPARTMENTS</button>
           
       </div>
+      <!-- TERZA COLONNA -->
 
-      
 
     </div>
+    <!-- FOOTER TOP -->
+
+
+
+    <!-- FOOTER BOTTOM -->
     <div class="footer-bottom">
         <div class="content container d-flex ">
           <div class="copyrights ">
@@ -110,6 +120,8 @@ export default {
           </div>
         </div>
     </div>
+    <!-- FOOTER BOTTOM -->
+
 
   </footer>
 

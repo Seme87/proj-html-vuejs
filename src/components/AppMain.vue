@@ -1,19 +1,15 @@
 <script>
-import SectionWelcome from './SectionWelcome.vue';
-import SectionMeet from './SectionMeet.vue';
-import SectionHealthService from './SectionHealthService.vue';
-import SectionTour from './SectionTour.vue';
-import SectionService from './SectionService.vue';
-import SectionAppointment from './SectionAppointment.vue';
-import SectionSlider from './SectionSlider.vue';
+
+  import SectionWelcome from './SectionWelcome.vue';
+  import SectionMeet from './SectionMeet.vue';
+  import SectionHealthService from './SectionHealthService.vue';
+  import SectionTour from './SectionTour.vue';
+  import SectionService from './SectionService.vue';
+  import SectionAppointment from './SectionAppointment.vue';
+  import SectionSlider from './SectionSlider.vue';
 
 
-
-
-
-
-
-export default {
+  export default {
   name: 'AppMain',
   components:{
     SectionWelcome,
@@ -24,11 +20,11 @@ export default {
     SectionAppointment,
     SectionSlider,
 }
-}
+  }
+  
 </script>
 
 <template>
-
   <SectionWelcome/>
   <SectionMeet/>
   <SectionHealthService/>
@@ -36,15 +32,6 @@ export default {
   <SectionService/>
   <SectionAppointment/>
   <SectionSlider/>
-
-
-
-
-
-
-
-
-
 </template>
 
 <style lang="scss" scoped>

@@ -1,9 +1,8 @@
 <script>
 
-
-export default {
-  name: 'AppHeader',
-  data(){
+  export default {
+    name: 'AppHeader',
+    data(){
     return {
       links: [
         {
@@ -29,8 +28,8 @@ export default {
 
       ],
     };
-  },
-  methods: {
+    },
+    methods: {
     changeLink(index) {
       
       this.links.forEach((elm, i) => {
@@ -43,35 +42,46 @@ export default {
         }
       });
     },
-  },
+    },
   
-};
+  };
+  
 </script>
 
 <template>
     <header>
+      <!-- HEADER TOP -->
       <div class="header-top container d-flex">
+      <!-- LOGO-->
         <div class="logo">
           <img src="../assets/medical_logo_1x_light.png" alt="">
         </div>
+      <!-- LOGO-->
+
+        <!-- BARRA DI NAVIGAZIONE -->
         <nav class="main-nav">
           <ul class="d-flex align-items-center">
             <li v-for="(item, index) in links">
               <a :href="item.href" @click.prevent="changeLink(index)"  :class="{ active: item.active }" >{{item.label}}</a>
             </li>
-            
             <li><button class="btn">MAKE APPOINTMENT</button></li>
           </ul>
         </nav>
+        <!-- BARRA DI NAVIGAZIONE -->
+
       </div>
+      <!-- HEADER TOP -->
+
+      <!-- HEADER BOOTOM -->
       <div class="header-bottom container-small">
         <div class="title">
           <h1>Caring <span>For life</span></h1>
         </div>
         <p>Kind Words can be short and easy to speak, but their echoes are truly endless.Avada Health focuses on you as if it was our own family</p>
         <button class="btn">LEARN MORE</button>
-
       </div>
+      <!-- HEADER BOOTOM -->
+
     </header>
 </template>
 

@@ -8,7 +8,9 @@
 
 <template>
     <Section class="service">
+        <!-- CARDS -->
         <div class="cards d-flex">
+            
             <div class="card first text-center">
                 <h5>Emergency Care</h5>
                 <img src="../assets/wave-divider.png" alt="LOGO-WAVE">
@@ -34,6 +36,8 @@
             </div>
 
         </div>
+        <!-- CARDS -->
+
     </Section>
 </template>
 

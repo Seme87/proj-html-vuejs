@@ -9,7 +9,9 @@
 
 
 <template>
+
     <section class="meet-section ">
+
         <!-- SEZIONE SUPERIORE MEET -->
         <div class="s-meet-top container-xs text-center">
             <div class="logo d-flex justify-content-center">
@@ -26,9 +28,10 @@
         </div>
         <!-- SEZIONE SUPERIORE MEET -->
 
-        <!-- SEZIONE INFERIORE MEET -->
+        <!-- SEZIONE INFERIORE MEET  CARDS-->
         <div class="cards d-flex container-small">
 
+            <!-- PRIMA CARD -->
             <div class="card">
                 <div class="img-doc">
                     <img src="../assets/doctor-1.jpg" alt="Doctor 1">
@@ -49,8 +52,11 @@
                 </div>
                 
             </div>
+            <!-- PRIMA CARD -->
 
+            <!-- SECONDA CARD -->
              <div class="card">
+
                 <div class="img-doc">
                     <img src="../assets/doctor-2.jpg" alt="Doctor 1">
                 </div>
@@ -70,7 +76,9 @@
                 </div>
                 
             </div>
+            <!-- SECONDA CARD -->
 
+            <!-- TERZA CARD -->
              <div class="card">
                 <div class="img-doc">
                     <img src="../assets/doctor-3.jpg" alt="Doctor 1">
@@ -91,13 +99,12 @@
                 </div>
                 
             </div>
-
-            
-
-           
-
+            <!-- TERZA CARD -->
 
         </div>
+        <!-- SEZIONE INFERIORE MEET  CARDS-->
+        
+
 
     </section>
 </template>
